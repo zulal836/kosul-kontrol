@@ -1,0 +1,37 @@
+{
+  "netflix": {
+    "url": "https://help.netflix.com/en/legal/termsofuse",
+    "hash": "79844d34a9cad023475d71e2439c1d1579b87ffac316550ee3c89318f5660793",
+    "recordedHash": "79844d34a9cad023475d71e2439c1d1579b87ffac316550ee3c89318f5660793",
+    "match": true,
+    "length": 22098
+  },
+  "adobe": {
+    "url": "https://www.adobe.com/cc-shared/fragments/legal/subscription/full-content.plain.html",
+    "hash": "eed96261b89439ac0d9cbed7ed74239c9916ff1bba508587ed9c097df1dddf48",
+    "recordedHash": "eed96261b89439ac0d9cbed7ed74239c9916ff1bba508587ed9c097df1dddf48",
+    "match": true,
+    "length": 3373
+  },
+  "reddit": {
+    "url": "https://redditinc.com/policies/user-agreement",
+    "hash": "cd2902e436d1f73e3308203da12a608e6313c8552f8a80d4b4ea92f33c1ac13a",
+    "recordedHash": "cd2902e436d1f73e3308203da12a608e6313c8552f8a80d4b4ea92f33c1ac13a",
+    "match": true,
+    "length": 84789
+  },
+  "dropbox": {
+    "url": "https://www.dropbox.com/terms",
+    "hash": "259a09cdc24c6a08b0d9834285257a639f770d837d16d48d1ef022fa9832521f",
+    "recordedHash": "259a09cdc24c6a08b0d9834285257a639f770d837d16d48d1ef022fa9832521f",
+    "match": true,
+    "length": 25302
+  },
+  "spotify": {
+    "url": "https://www.spotify.com/de/legal/end-user-agreement/",
+    "hash": "b735971d83f23e538b9a8604671e5f375ee43797c622c9bd44e9fe79438db2ff",
+    "recordedHash": "b735971d83f23e538b9a8604671e5f375ee43797c622c9bd44e9fe79438db2ff",
+    "match": true,
+    "length": 39163
+  }
+}

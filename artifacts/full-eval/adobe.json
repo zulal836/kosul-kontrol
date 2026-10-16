@@ -1,0 +1,99 @@
+{
+  "id": "adobe",
+  "source": "https://www.adobe.com/cc-shared/fragments/legal/subscription/full-content.plain.html",
+  "sourcePage": "https://www.adobe.com/legal/subscription-terms.html",
+  "scope": "Adobe: annual / monthly plan bolumunun tamami; diger planlar kapsam disi.",
+  "model": "gemini-3.5-flash-lite",
+  "fetched_at": "2026-10-15T23:41:06.349Z",
+  "sha256": "eed96261b89439ac0d9cbed7ed74239c9916ff1bba508587ed9c097df1dddf48",
+  "characters": 3373,
+  "result": {
+    "version": 1,
+    "score": 65,
+    "status": "review",
+    "risks": [
+      {
+        "category": "auto_renewal",
+        "quote": "For automatic renewing customers in the United States, after the first year, your subscription will automatically renew on a monthly basis until you cancel.",
+        "explanation": "Amerika Birleşik Devletleri'ndeki otomatik yenilenen müşteriler için aboneliğiniz ilk yıldan sonra siz iptal edene kadar aylık olarak otomatik olarak yenilenir.",
+        "confidence": 0.95,
+        "start": 810,
+        "end": 966
+      },
+      {
+        "category": "liability_limit",
+        "quote": "If your primary payment method fails, you authorize us to charge any other payment method in your account.",
+        "explanation": "Birincil ödeme yönteminizin başarısız olması durumunda, hesabınızdaki diğer ödeme yöntemlerini tahsil etmemize izin vermiş olursunuz.",
+        "confidence": 0.9,
+        "start": 1436,
+        "end": 1542
+      },
+      {
+        "category": "cancellation_fee",
+        "quote": "Should you cancel after 14 days, you’ll be charged a lump sum amount of 50% of your remaining contract obligation",
+        "explanation": "14 gün geçtikten sonra iptal ederseniz, kalan sözleşme yükümlülüğünüzün %50'si tutarında toplu bir ücret tahsil edilir.",
+        "confidence": 0.95,
+        "start": 2974,
+        "end": 3087
+      },
+      {
+        "category": "refund_limit",
+        "quote": "If you cancel within 14 days of your initial order, you’ll be fully refunded.",
+        "explanation": "İlk siparişinizden sonraki 14 gün içinde iptal ederseniz, ücretiniz tam olarak iade edilir; aksi takdirde iade kısıtlamaları geçerli olur.",
+        "confidence": 0.9,
+        "start": 2896,
+        "end": 2973
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "We may change your plan’s rate each annual renewal term, and we will notify you of any rate change with the option to cancel.",
+        "explanation": "Planınızın ücretini her yıllık yenileme döneminde değiştirebiliriz ve herhangi bir ücret değişikliğini iptal seçeneğiyle birlikte size bildiririz.",
+        "confidence": 0.9,
+        "start": 1310,
+        "end": 1435
+      }
+    ],
+    "rejected": [],
+    "uncertainties": [
+      "Belgede veri paylaşımı ve gizlilik politikası detaylarına yer verilmemiştir.",
+      "Uyuşmazlık durumunda uygulanacak tahkim veya mahkeme kuralları metinde belirtilmemiştir."
+    ],
+    "chunks": 1,
+    "truncated": false,
+    "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+  },
+  "review": [
+    {
+      "category": "auto_renewal",
+      "quote": "For automatic renewing customers in the United States, after the first year, your subscription will automatically renew on a monthly basis until you cancel.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "If your primary payment method fails, you authorize us to charge any other payment method in your account.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "cancellation_fee",
+      "quote": "Should you cancel after 14 days, you’ll be charged a lump sum amount of 50% of your remaining contract obligation",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "refund_limit",
+      "quote": "If you cancel within 14 days of your initial order, you’ll be fully refunded.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "We may change your plan’s rate each annual renewal term, and we will notify you of any rate change with the option to cancel.",
+      "label": "UNREVIEWED",
+      "note": ""
+    }
+  ],
+  "missed": [],
+  "annotationStatus": "UNREVIEWED: tam metin gold etiketleme olmadan precision/recall hesaplanmaz."
+}

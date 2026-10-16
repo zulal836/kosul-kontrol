@@ -1,0 +1,210 @@
+{
+  "mode": "live-llm-short-excerpts",
+  "timestamp": "2026-10-15T23:25:38.373Z",
+  "model": "gemini-3.5-flash-lite",
+  "scope": "5 gerçek ToS kaynağından kısa kesit. Tam sözleşme değerlendirmesi değildir. Gold yalnızca bu kesitler için.",
+  "tp": 4,
+  "fp": 0,
+  "fn": 0,
+  "precision": 1,
+  "recall": 1,
+  "rows": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "url": "https://help.netflix.com/en/legal/termsofuse",
+      "section": "2.1 Subscription Autorenewal and Billing",
+      "gold": [
+        "auto_renewal"
+      ],
+      "notes": "ABD İngilizce sürümü; yenileme. Ülkelere genellenemez.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "9062bc767fef9c0e7e05bcc57187e5320e2b31fbd3ba267dc92b17981bea2864",
+      "predicted": [
+        "auto_renewal"
+      ],
+      "caught": [
+        "auto_renewal"
+      ],
+      "missed": [],
+      "falseAlarms": [],
+      "response": {
+        "version": 1,
+        "score": 15,
+        "status": "complete",
+        "risks": [
+          {
+            "category": "auto_renewal",
+            "quote": "Your Netflix subscription will continue and automatically renew until terminated.",
+            "explanation": "Üyeliğiniz iptal edilene kadar otomatik olarak yenilenmeye devam edecektir.",
+            "confidence": 1,
+            "start": 0,
+            "end": 81
+          }
+        ],
+        "rejected": [],
+        "uncertainties": [],
+        "chunks": 1,
+        "truncated": false,
+        "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+      }
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe",
+      "url": "https://www.adobe.com/legal/subscription-terms.html",
+      "section": "Annual contract paid monthly / Cancellation Terms",
+      "gold": [
+        "cancellation_fee"
+      ],
+      "notes": "Yıllık, aylık ödenen planın kısa kesiti. 14 gün içindeki istisna daha geniş metinde yer alır.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "d9c1c7d7efb65304dc264b4328eaaefd40f561caf76dc8ec8a1157189b99f6c0",
+      "predicted": [
+        "cancellation_fee"
+      ],
+      "caught": [
+        "cancellation_fee"
+      ],
+      "missed": [],
+      "falseAlarms": [],
+      "response": {
+        "version": 1,
+        "score": 20,
+        "status": "review",
+        "risks": [
+          {
+            "category": "cancellation_fee",
+            "quote": "Should you cancel after 14 days, you’ll be charged a lump sum amount of 50% of your remaining contract obligation",
+            "explanation": "14 günlük süre geçtikten sonra sözleşmeyi iptal etmeniz durumunda, kalan sözleşme yükümlülüğünün yüzde 50'si kadar toplu bir ücret tahsil edilecektir.",
+            "confidence": 0.95,
+            "start": 0,
+            "end": 113
+          }
+        ],
+        "rejected": [],
+        "uncertainties": [
+          "14 günlük sürenin ne zaman başladığı tam olarak belirtilmemiştir."
+        ],
+        "chunks": 1,
+        "truncated": false,
+        "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+      }
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "url": "https://redditinc.com/policies/user-agreement",
+      "section": "5. Your Content",
+      "gold": [
+        "content_license"
+      ],
+      "notes": "İçerik üzerinde verilen geniş lisansın kesiti; mülkiyetin devri diye yorumlanmamalı.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "3872ad612cfbfabbf62eb21d343b3471c2849d7f6645355c7322a093f119a17b",
+      "predicted": [
+        "content_license"
+      ],
+      "caught": [
+        "content_license"
+      ],
+      "missed": [],
+      "falseAlarms": [],
+      "response": {
+        "version": 1,
+        "score": 10,
+        "status": "complete",
+        "risks": [
+          {
+            "category": "content_license",
+            "quote": "you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license",
+            "explanation": "Kullanıcı, yüklediği içerikler üzerinde şirkete dünya çapında, telifsiz, kalıcı, geri alınamaz ve alt lisanslanabilir geniş kapsamlı bir lisans vermektedir.",
+            "confidence": 1,
+            "start": 0,
+            "end": 118
+          }
+        ],
+        "rejected": [],
+        "uncertainties": [],
+        "chunks": 1,
+        "truncated": false,
+        "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+      }
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "url": "https://www.dropbox.com/terms",
+      "section": "Paid Accounts / Cancellation",
+      "gold": [
+        "refund_limit"
+      ],
+      "notes": "İstediğinde iptal edebilmek risk değil. İade kısıtı yasal istisnayı koruyarak açıklanmalı.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "20a54b59559be0d1172370f20d5cf63ee49d5c0f99932813dfd04fde0ba9d1ab",
+      "predicted": [
+        "refund_limit"
+      ],
+      "caught": [
+        "refund_limit"
+      ],
+      "missed": [],
+      "falseAlarms": [],
+      "response": {
+        "version": 1,
+        "score": 10,
+        "status": "review",
+        "risks": [
+          {
+            "category": "refund_limit",
+            "quote": "Refunds are only issued if required by law.",
+            "explanation": "Ücret iadelerinin yalnızca yasal olarak zorunlu olduğu durumlarda yapılacağı belirtilmiştir; bunun dışındaki durumlarda iade yapılmaz.",
+            "confidence": 0.95,
+            "start": 46,
+            "end": 89
+          }
+        ],
+        "rejected": [],
+        "uncertainties": [
+          "Otomatik yenileme, iptal ücreti, veri paylaşımı, içerik lisansı, tek taraflı değişiklik, tahkim ve sorumluluk sınırı hakkında bilgi verilmemiştir."
+        ],
+        "chunks": 1,
+        "truncated": false,
+        "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+      }
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "url": "https://www.spotify.com/de/legal/end-user-agreement/",
+      "section": "4.2 Widerrufsrecht",
+      "gold": [],
+      "notes": "Almanya sürümündeki tüketici lehine cayma hakkı: negatif kontrol. Otomatik yenileme veya ceza değil.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "fe47fcccf0507443537028076ae727b8b674e68f016576a9828e50355e0995bd",
+      "predicted": [],
+      "caught": [],
+      "missed": [],
+      "falseAlarms": [],
+      "response": {
+        "version": 1,
+        "score": null,
+        "status": "review",
+        "risks": [],
+        "rejected": [],
+        "uncertainties": [
+          "Sözleşmede otomatik yenileme, iptal ücreti, iade kısıtı, veri paylaşımı, içerik lisansı, tek taraflı değişiklik, tahkim ve sorumluluk sınırlaması ile ilgili bilgi bulunmamaktadır.",
+          "Doğrulanmış bulgu çıkmadı. Bu, belgenin risksiz olduğunu göstermez."
+        ],
+        "chunks": 1,
+        "truncated": false,
+        "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+      }
+    }
+  ]
+}

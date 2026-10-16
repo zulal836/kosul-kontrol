@@ -1,0 +1,158 @@
+{
+  "id": "dropbox",
+  "source": "https://www.dropbox.com/terms",
+  "fetched_at": "2026-10-15T23:28:57.621Z",
+  "sha256": "259a09cdc24c6a08b0d9834285257a639f770d837d16d48d1ef022fa9832521f",
+  "characters": 25302,
+  "result": {
+    "version": 1,
+    "score": 55,
+    "status": "review",
+    "risks": [
+      {
+        "category": "auto_renewal",
+        "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+        "explanation": "Ücretli hesaplara geçildiğinde abonelik otomatik olarak yenilenir ve siz iptal edene kadar her dönem faturalandırılırsınız.",
+        "confidence": 0.95,
+        "start": 9762,
+        "end": 9883
+      },
+      {
+        "category": "content_license",
+        "quote": "These Terms don’t give us any rights to Your Stuff except for the limited rights that enable us to offer the Services.",
+        "explanation": "Kullanıcı içeriğiniz size aittir, ancak hizmetleri sunabilmemiz için bize sınırlı haklar ve izinler vermeniz gerekir.",
+        "confidence": 0.85,
+        "start": 1788,
+        "end": 1906
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "Dropbox’s Terms of Service will be changing effective January 1, 2027. Click here to review the new terms.",
+        "explanation": "Hizmet şartları ilerleyen bir tarihte tek taraflı olarak değiştirilebilir.",
+        "confidence": 0.8,
+        "start": 0,
+        "end": 106
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions.",
+        "explanation": "Şirket, iş koşulları veya ekonomik değişikliklere dayanarak abonelik yenileme ücretlerinde tek taraflı değişiklik yapabilir.",
+        "confidence": 0.95,
+        "start": 10927,
+        "end": 11113
+      },
+      {
+        "category": "arbitration",
+        "quote": "You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms.",
+        "explanation": "Uyuşmazlıkların mahkeme yerine tahkim yoluyla çözülmesi zorunlu kılınmıştır. İlk kayıttan itibaren 30 gün içinde bu kuraldan vazgeçme (opt-out) hakkınızı kullanmazsanız tahkim şartı bağlayıcı olur.",
+        "confidence": 0.95,
+        "start": 19206,
+        "end": 19375
+      },
+      {
+        "category": "arbitration",
+        "quote": "NO CLASS OR REPRESENTATIVE ACTIONS. You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.",
+        "explanation": "Toplu dava (class action) açma hakkından feragat edilmekte olup, uyuşmazlıklar yalnızca bireysel temeldedжли çözülebilir.",
+        "confidence": 0.95,
+        "start": 21809,
+        "end": 22017
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "We may revise these Terms to better reflect: changes to the law, new regulatory requirements, or improvements or enhancements made to our Services.",
+        "explanation": "Şirket, kanun değişiklikleri veya hizmet iyileştirmeleri gibi nedenlerle sözleşme koşullarında tek taraflı değişiklik yapma hakkını saklı tutar.",
+        "confidence": 0.95,
+        "start": 24414,
+        "end": 24561
+      },
+      {
+        "category": "refund_limit",
+        "quote": "Where applicable, we’ll offer you a prorated refund based on the amounts you have prepaid for Services and your account cancellation date.",
+        "explanation": "Yapılan güncellemeleri kabul etmemeniz durumunda hesap iptal edilebilir ve geçerli olduğu hallerde önceden ödenen tutarlar üzerinden orantılı (prorated) iade yapılır.",
+        "confidence": 0.85,
+        "start": 25040,
+        "end": 25178
+      }
+    ],
+    "rejected": [
+      {
+        "category": "refund_limit",
+        "reason": "Alıntı kaynakta yok"
+      },
+      {
+        "category": "data_sharing",
+        "reason": "Alıntı kaynakta yok"
+      },
+      {
+        "category": "liability_limit",
+        "reason": "Alıntı kaynakta yok"
+      },
+      {
+        "category": "arbitration",
+        "reason": "Alıntı kaynakta yok"
+      }
+    ],
+    "uncertainties": [
+      "Metin yarım kaldığı için iptal ücreti, iade kısıtları, tahkim ve sorumluluk sınırı gibi detaylar belgenin devamında yer alıyor olabilir.",
+      "Tahkim prosedürlerinin ve ayrıntılarının tam metni sağlanan metnin sonunda kesildiği için eksiktir.",
+      "Kaynakta bulunamayan alıntılar reddedildi.",
+      "Otomatik yenileme, iptal ücreti, veri paylaşımı ve içerik lisansı konularına ilişkin hükümler metinde yer almamaktadır.",
+      "Sorumluluk sınırı (liability limit) hakkında bu metinde bilgi bulunmamaktadır."
+    ],
+    "chunks": 3,
+    "truncated": false,
+    "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+  },
+  "review": [
+    {
+      "category": "auto_renewal",
+      "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "content_license",
+      "quote": "These Terms don’t give us any rights to Your Stuff except for the limited rights that enable us to offer the Services.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "Dropbox’s Terms of Service will be changing effective January 1, 2027. Click here to review the new terms.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "arbitration",
+      "quote": "You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "arbitration",
+      "quote": "NO CLASS OR REPRESENTATIVE ACTIONS. You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "We may revise these Terms to better reflect: changes to the law, new regulatory requirements, or improvements or enhancements made to our Services.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "refund_limit",
+      "quote": "Where applicable, we’ll offer you a prorated refund based on the amounts you have prepaid for Services and your account cancellation date.",
+      "label": "UNREVIEWED",
+      "note": ""
+    }
+  ],
+  "missed": [],
+  "annotationStatus": "UNREVIEWED — Tam metinde gold etiketleme olmadan precision/recall hesaplanmaz."
+}

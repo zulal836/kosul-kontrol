@@ -1,0 +1,152 @@
+{
+  "id": "spotify",
+  "source": "https://www.spotify.com/de/legal/end-user-agreement/",
+  "fetched_at": "2026-10-15T23:29:35.507Z",
+  "sha256": "b735971d83f23e538b9a8604671e5f375ee43797c622c9bd44e9fe79438db2ff",
+  "characters": 39163,
+  "result": {
+    "version": 1,
+    "score": 45,
+    "status": "review",
+    "risks": [
+      {
+        "category": "auto_renewal",
+        "quote": "Wenn Sie das kostenpflichtige Abonnement nicht vor Ende des Probeabonnements kündigen, verlieren Sie dieses Vorab-Kündigungsrecht und erteilen Spotify die Erlaubnis, Ihnen bis zur Kündigung des kostenpflichtigen Abonnements monatlich die vereinbarte Gebühr in Rechnung zu stellen.",
+        "explanation": "E deneme süresinin sonunda abonelik otomatik olarak ücretli bir plana dönüşür ve iptal edilene kadar her ay ücret tahsil edilir.",
+        "confidence": 0.95,
+        "start": 8950,
+        "end": 9230
+      },
+      {
+        "category": "auto_renewal",
+        "quote": "Sofern Ihr kostenpflichtiges Abonnement nicht für einen vorausbezahlten Zeitraum erworben wurde, läuft das kostenpflichtige Abonnement auf unbestimmte Zeit bis zur Kündigung. Am ersten Tag jedes Abrechnungszeitraums wird Ihnen die Abonnementgebühr in Rechnung gestellt",
+        "explanation": "Abonnements verlängern sich automatisch auf unbestimmte Zeit und die Gebühren werden zu Beginn jedes Abrechnungszeitraums belastet, sofern keine rechtzeitige Kündigung erfolgt.",
+        "confidence": 1,
+        "start": 12083,
+        "end": 12351
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "Wir können Ihr kostenpflichtiges Abonnement mit einer Frist von mindestens 14 Tagen kündigen.",
+        "explanation": "Der Anbieter behält sich das Recht vor, das kostenpflichtige Abonnement einseitig unter Einhaltung einer Frist von mindestens 14 Tagen zu kündigen.",
+        "confidence": 1,
+        "start": 12966,
+        "end": 13059
+      },
+      {
+        "category": "content_license",
+        "quote": "Aus diesem Grund räumen Sie Spotify an diesen nutzergenerierten Inhalten, d.h. insbesondere solchen, die durch Rechte an geistigem Eigentum geschützt sind, eine nicht exklusive, übertragbare, gebührenfreie, weltweit gültige Lizenz zur Nutzung, Vervielfältigung, öffentlichen Zugänglichmachung (z. B. zur Aufführung oder Ausstellung), Veröffentlichung, Überse",
+        "explanation": "Nutzer räumen dem Anbieter eine umfangreiche, weltweite und gebührenfreie Lizenz zur Nutzung und Verwertung ihrer hochgeladenen Inhalte ein.",
+        "confidence": 0.95,
+        "start": 19242,
+        "end": 19600
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "Aus diesem Grund können wir (dauerhaft oder vorübergehend) die Bereitstellung aller oder eines Teils der Spotify-Dienste (einschließlich bestimmter Funktionen, Merkmale, Abonnement-Pläne und Aktionsangebote) ändern, aussetzen oder einstellen.",
+        "explanation": "Spotify, hizmetleri, abonelik planlarını veya özellikleri triftigen Gründen (geçerli sebeplerle) sürekli veya geçici olarak değiştirme, askıya alma veya durdurma hakkını saklı tutar.",
+        "confidence": 0.9,
+        "start": 23858,
+        "end": 24100
+      },
+      {
+        "category": "liability_limit",
+        "quote": "Eine Haftung von Spotify für Schäden, die durch technische Störungen der Community, Verzögerungen oder Unterbrechungen in der Übermittlung, und/oder durch Verlust oder Löschung von Inhalten, z.B. aufgrund von Cyberangriffen oder Schadprogrammen (wie etwa Viren etc) verursacht werden, ist ausgeschlossen.",
+        "explanation": "Spotify excludes liability for damages caused by technical malfunctions, transmission delays or interruptions, and loss or deletion of content due to cyberattacks or malware.",
+        "confidence": 0.95,
+        "start": 29301,
+        "end": 29605
+      },
+      {
+        "category": "liability_limit",
+        "quote": "Über die vorgenannten Fälle hinaus ist eine Haftung von Spotify ausgeschlossen. In diesen Fällen steht Ihnen bei Problemen oder Unzufriedenheit mit den Spotify-Diensten als einzige und ausschließliche Abhilfe die De-Installation der Spotify-Software und die Beendigung der Nutzung der Spotify-Dienste zur Verfügung.",
+        "explanation": "Beyond specific permitted cases, Spotify's liability is excluded, leaving the user with uninstalling the software and terminating service as the sole remedy.",
+        "confidence": 0.95,
+        "start": 33480,
+        "end": 33795
+      },
+      {
+        "category": "liability_limit",
+        "quote": "Die vorstehende Schadloshaltungsklausel gilt nicht, wenn Sie den Verstoß bzw. die Verletzung nicht zu vertreten haben.",
+        "explanation": "Sorumluluk sınırları ve tazminat yükümlülüğü getirilmiştir; ancak ihlalden sorumlu olmadığınız durumlarda bu kuralın uygulanmayacağı belirtilmektedir.",
+        "confidence": 0.95,
+        "start": 38508,
+        "end": 38626
+      }
+    ],
+    "rejected": [
+      {
+        "category": "unilateral_change",
+        "reason": "Alıntı kaynakta yok"
+      },
+      {
+        "category": "content_license",
+        "reason": "Alıntı kaynakta yok"
+      }
+    ],
+    "uncertainties": [
+      "Belge metni tam olarak yüklenmemiş ve yarıda kesilmiştir; bu nedenle sorumluluk sınırları, tahkim veya veri paylaşımı gibi diğer maddeler incelenememiştir.",
+      "Kaynakta bulunamayan alıntılar reddedildi.",
+      "Das bereitgestellte Textdokument bricht im letzten Satz ab, wodurch Details zur Übertragbarkeit und zu weiteren Lizenzrechten unvollständig sind.",
+      "Angaben zu Haftungsbeschränkungen oder Schiedsgerichtsverfahren sind im vorliegenden Textauszug nicht enthalten.",
+      "Metin bütünlüğü eksik olduğundan iptal ücreti ve tahkim gibi bazı potansiyel risk kategorileri belgede yer almamaktadır.",
+      "The text is cut off at the end under section 19, meaning the exact governing law and jurisdiction details are missing.",
+      "Metinde otomatik yenileme, iptal ücreti, iade kısıtı, veri paylaşımı, içerik lisansı, tek taraflı değişiklik ve tahkim ile ilgili hükümler yer almamaktadır."
+    ],
+    "chunks": 5,
+    "truncated": false,
+    "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+  },
+  "review": [
+    {
+      "category": "auto_renewal",
+      "quote": "Wenn Sie das kostenpflichtige Abonnement nicht vor Ende des Probeabonnements kündigen, verlieren Sie dieses Vorab-Kündigungsrecht und erteilen Spotify die Erlaubnis, Ihnen bis zur Kündigung des kostenpflichtigen Abonnements monatlich die vereinbarte Gebühr in Rechnung zu stellen.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "auto_renewal",
+      "quote": "Sofern Ihr kostenpflichtiges Abonnement nicht für einen vorausbezahlten Zeitraum erworben wurde, läuft das kostenpflichtige Abonnement auf unbestimmte Zeit bis zur Kündigung. Am ersten Tag jedes Abrechnungszeitraums wird Ihnen die Abonnementgebühr in Rechnung gestellt",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "Wir können Ihr kostenpflichtiges Abonnement mit einer Frist von mindestens 14 Tagen kündigen.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "content_license",
+      "quote": "Aus diesem Grund räumen Sie Spotify an diesen nutzergenerierten Inhalten, d.h. insbesondere solchen, die durch Rechte an geistigem Eigentum geschützt sind, eine nicht exklusive, übertragbare, gebührenfreie, weltweit gültige Lizenz zur Nutzung, Vervielfältigung, öffentlichen Zugänglichmachung (z. B. zur Aufführung oder Ausstellung), Veröffentlichung, Überse",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "Aus diesem Grund können wir (dauerhaft oder vorübergehend) die Bereitstellung aller oder eines Teils der Spotify-Dienste (einschließlich bestimmter Funktionen, Merkmale, Abonnement-Pläne und Aktionsangebote) ändern, aussetzen oder einstellen.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "Eine Haftung von Spotify für Schäden, die durch technische Störungen der Community, Verzögerungen oder Unterbrechungen in der Übermittlung, und/oder durch Verlust oder Löschung von Inhalten, z.B. aufgrund von Cyberangriffen oder Schadprogrammen (wie etwa Viren etc) verursacht werden, ist ausgeschlossen.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "Über die vorgenannten Fälle hinaus ist eine Haftung von Spotify ausgeschlossen. In diesen Fällen steht Ihnen bei Problemen oder Unzufriedenheit mit den Spotify-Diensten als einzige und ausschließliche Abhilfe die De-Installation der Spotify-Software und die Beendigung der Nutzung der Spotify-Dienste zur Verfügung.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "Die vorstehende Schadloshaltungsklausel gilt nicht, wenn Sie den Verstoß bzw. die Verletzung nicht zu vertreten haben.",
+      "label": "UNREVIEWED",
+      "note": ""
+    }
+  ],
+  "missed": [],
+  "annotationStatus": "UNREVIEWED — Tam metinde gold etiketleme olmadan precision/recall hesaplanmaz."
+}

@@ -1,0 +1,117 @@
+{
+  "mode": "lexical-baseline-short-excerpts",
+  "timestamp": "2026-10-15T22:38:16.169Z",
+  "model": null,
+  "scope": "5 gerçek ToS kaynağından kısa kesit. Tam sözleşme değerlendirmesi değildir. Gold yalnızca bu kesitler için.",
+  "tp": 3,
+  "fp": 2,
+  "fn": 1,
+  "precision": 0.6,
+  "recall": 0.75,
+  "rows": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "url": "https://help.netflix.com/en/legal/termsofuse",
+      "section": "2.1 Subscription Autorenewal and Billing",
+      "gold": [
+        "auto_renewal"
+      ],
+      "notes": "ABD İngilizce sürümü; yenileme. Ülkelere genellenemez.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "9062bc767fef9c0e7e05bcc57187e5320e2b31fbd3ba267dc92b17981bea2864",
+      "predicted": [
+        "auto_renewal"
+      ],
+      "caught": [
+        "auto_renewal"
+      ],
+      "missed": [],
+      "falseAlarms": []
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe",
+      "url": "https://www.adobe.com/legal/subscription-terms.html",
+      "section": "Annual contract paid monthly / Cancellation Terms",
+      "gold": [
+        "cancellation_fee"
+      ],
+      "notes": "Yıllık, aylık ödenen planın kısa kesiti. 14 gün içindeki istisna daha geniş metinde yer alır.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "d9c1c7d7efb65304dc264b4328eaaefd40f561caf76dc8ec8a1157189b99f6c0",
+      "predicted": [
+        "cancellation_fee"
+      ],
+      "caught": [
+        "cancellation_fee"
+      ],
+      "missed": [],
+      "falseAlarms": []
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "url": "https://redditinc.com/policies/user-agreement",
+      "section": "5. Your Content",
+      "gold": [
+        "content_license"
+      ],
+      "notes": "İçerik üzerinde verilen geniş lisansın kesiti; mülkiyetin devri diye yorumlanmamalı.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "3872ad612cfbfabbf62eb21d343b3471c2849d7f6645355c7322a093f119a17b",
+      "predicted": [],
+      "caught": [],
+      "missed": [
+        "content_license"
+      ],
+      "falseAlarms": []
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "url": "https://www.dropbox.com/terms",
+      "section": "Paid Accounts / Cancellation",
+      "gold": [
+        "refund_limit"
+      ],
+      "notes": "İstediğinde iptal edebilmek risk değil. İade kısıtı yasal istisnayı koruyarak açıklanmalı.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "20a54b59559be0d1172370f20d5cf63ee49d5c0f99932813dfd04fde0ba9d1ab",
+      "predicted": [
+        "cancellation_fee",
+        "refund_limit"
+      ],
+      "caught": [
+        "refund_limit"
+      ],
+      "missed": [],
+      "falseAlarms": [
+        "cancellation_fee"
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "url": "https://www.spotify.com/de/legal/end-user-agreement/",
+      "section": "4.2 Widerrufsrecht",
+      "gold": [],
+      "notes": "Almanya sürümündeki tüketici lehine cayma hakkı: negatif kontrol. Otomatik yenileme veya ceza değil.",
+      "accessed_at": "2026-10-15",
+      "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri.",
+      "sha256": "fe47fcccf0507443537028076ae727b8b674e68f016576a9828e50355e0995bd",
+      "predicted": [
+        "cancellation_fee"
+      ],
+      "caught": [],
+      "missed": [],
+      "falseAlarms": [
+        "cancellation_fee"
+      ]
+    }
+  ]
+}

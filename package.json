@@ -1,0 +1,30 @@
+{
+  "name": "kosul-kontrol",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node server/index.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "eval": "node scripts/eval.mjs",
+    "eval:live": "node scripts/eval.mjs --live",
+    "demo": "node scripts/start-demo.mjs",
+    "cy:run": "cypress run --browser electron",
+    "demo:video": "node scripts/demo-video.mjs",
+    "cy:all": "node scripts/capture-test.mjs && cypress run --browser electron",
+    "security:live": "node scripts/security-live.mjs",
+    "eval:full": "node scripts/full-eval.mjs"
+  },
+  "dependencies": {
+    "@page-agent/page-controller": "1.12.4",
+    "ajv": "8.17.1",
+    "dotenv": "^17.2.3",
+    "esbuild": "^0.25.12",
+    "express": "^5.1.0",
+    "cheerio": "1.1.2"
+  },
+  "devDependencies": {
+    "cypress": "^15.5.0"
+  }
+}

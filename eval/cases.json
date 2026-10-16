@@ -1,0 +1,65 @@
+[
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "url": "https://help.netflix.com/en/legal/termsofuse",
+    "section": "2.1 Subscription Autorenewal and Billing",
+    "text": "Your Netflix subscription will continue and automatically renew until terminated.",
+    "gold": [
+      "auto_renewal"
+    ],
+    "notes": "ABD İngilizce sürümü; yenileme. Ülkelere genellenemez.",
+    "accessed_at": "2026-10-15",
+    "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri."
+  },
+  {
+    "id": "adobe",
+    "name": "Adobe",
+    "url": "https://www.adobe.com/legal/subscription-terms.html",
+    "section": "Annual contract paid monthly / Cancellation Terms",
+    "text": "Should you cancel after 14 days, you’ll be charged a lump sum amount of 50% of your remaining contract obligation",
+    "gold": [
+      "cancellation_fee"
+    ],
+    "notes": "Yıllık, aylık ödenen planın kısa kesiti. 14 gün içindeki istisna daha geniş metinde yer alır.",
+    "accessed_at": "2026-10-15",
+    "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri."
+  },
+  {
+    "id": "reddit",
+    "name": "Reddit",
+    "url": "https://redditinc.com/policies/user-agreement",
+    "section": "5. Your Content",
+    "text": "you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license",
+    "gold": [
+      "content_license"
+    ],
+    "notes": "İçerik üzerinde verilen geniş lisansın kesiti; mülkiyetin devri diye yorumlanmamalı.",
+    "accessed_at": "2026-10-15",
+    "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri."
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "url": "https://www.dropbox.com/terms",
+    "section": "Paid Accounts / Cancellation",
+    "text": "You may cancel your Paid Account at any time. Refunds are only issued if required by law.",
+    "gold": [
+      "refund_limit"
+    ],
+    "notes": "İstediğinde iptal edebilmek risk değil. İade kısıtı yasal istisnayı koruyarak açıklanmalı.",
+    "accessed_at": "2026-10-15",
+    "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri."
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "url": "https://www.spotify.com/de/legal/end-user-agreement/",
+    "section": "4.2 Widerrufsrecht",
+    "text": "Sie haben das Recht, binnen vierzehn Tagen ohne Angaben von Gründen diesen Vertrag zu widerrufen.",
+    "gold": [],
+    "notes": "Almanya sürümündeki tüketici lehine cayma hakkı: negatif kontrol. Otomatik yenileme veya ceza değil.",
+    "accessed_at": "2026-10-15",
+    "annotation": "Proje taslağı etiketi; hukuk uzmanı onaylı değil. Sadece bu kesit için tüketici dikkat kategorileri."
+  }
+]

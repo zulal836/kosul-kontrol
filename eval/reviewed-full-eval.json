@@ -1,0 +1,495 @@
+{
+  "reviewType": "AI-assisted evidence and taxonomy review; not an independent human legal gold set",
+  "reviewDate": "2026-10-16",
+  "snapshotVerification": "All five fetched source texts exactly match original SHA256 values.",
+  "labelDefinitions": {
+    "SUPPORTED": "Alıntı ile kategori/açıklamanın temel anlamı uyumlu; hukuki geçerlilik onayı değil.",
+    "FALSE_ALARM": "Kategori yanlış veya seçilen alıntı kullanıcı lehine/genel bildirim olup risk iddiasını desteklemiyor.",
+    "REVIEW": "Önemli istisna, alıntı bütünlüğü veya Türkçe gereksinimi sorunlu; otomatik doğru kabul edilmedi."
+  },
+  "documents": [
+    {
+      "id": "netflix",
+      "source": "https://help.netflix.com/en/legal/termsofuse",
+      "sourcePage": "https://help.netflix.com/en/legal/termsofuse",
+      "sourceSHA256": "79844d34a9cad023475d71e2439c1d1579b87ffac316550ee3c89318f5660793",
+      "characters": 22098,
+      "analyzedCharacterLimit": 60000,
+      "truncated": false,
+      "model": "gemini-3.5-flash-lite",
+      "originalScore": 70,
+      "originalStatus": "review",
+      "counts": {
+        "SUPPORTED": 5,
+        "FALSE_ALARM": 1,
+        "REVIEW": 2
+      },
+      "findings": [
+        {
+          "findingIndex": 0,
+          "category": "auto_renewal",
+          "quote": "Unless you cancel your subscription before your billing date, you authorize us to charge the subscription fee for the next billing cycle to your Payment Method",
+          "originalExplanation": "Aboneliğinizi iptal etmediğiniz sürece sonraki fatura dönemi için ücret otomatik olarak ödeme yönteminize yansıtılır.",
+          "assessment": "SUPPORTED",
+          "reason": "İptal edilmezse sonraki dönemin tahsilatı alıntıda açık.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 1,
+          "category": "refund_limit",
+          "quote": "To the extent permitted by the applicable law, payments are non-refundable and we do not provide refunds or credits for any partial subscription periods or unused Netflix content.",
+          "originalExplanation": "İlgili yasaların izin verdiği ölçüde, kısmi dönemler veya kullanılmayan içerikler için ödemeler iade edilmez ve kredi verilmez.",
+          "assessment": "SUPPORTED",
+          "reason": "İade kısıtı, uygulanabilir hukukun izin verdiği ölçüde kaydıyla açıklanmış.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 2,
+          "category": "liability_limit",
+          "quote": "The Netflix service is provided \"as is\" and without warranty or condition. In particular, our service may not be uninterrupted or error-free. You waive all special, indirect and consequential damages against us.",
+          "originalExplanation": "Hizmet olduğu gibi sunulur, kesintisiz veya hatasız olacağı garanti edilmez ve dolaylı zararlar için sorumluluk reddedilir.",
+          "assessment": "SUPPORTED",
+          "reason": "Garanti reddi ve dolaylı zarar kapsamı alıntıyla uyumlu; yerel tüketici haklarına ilişkin daha geniş bağlam ayrıca okunmalı.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 3,
+          "category": "unilateral_change",
+          "quote": "We may change our subscription plans and the price of our service from time to time. We will notify you at least one month before any price changes or changes to your subscription plan will become effective.",
+          "originalExplanation": "Abonelik planları ve fiyatlar tek taraflı olarak değiştirilebilir; değişiklikler önceden bildirilir ancak kabul edilmezse tek yol iptal etmektir.",
+          "assessment": "REVIEW",
+          "reason": "Fiyat değişikliği ve bildirim destekli; açıklamadaki “tek yol iptal” dışlayıcı ifadesi yalnızca bu alıntıyla kanıtlanmıyor.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 4,
+          "category": "data_sharing",
+          "quote": "We may also update your Payment Methods using information provided by the payment service providers.",
+          "originalExplanation": "Ödeme hizmeti sağlayıcılarından alınan bilgiler kullanılarak ödeme yöntemleri güncellenebilir.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Ödeme sağlayıcısından güncelleme bilgisi almak, tek başına dışarıya riskli kişisel veri paylaşımını kanıtlamaz.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 5,
+          "category": "content_license",
+          "quote": "ponses to questionnaires or through postings to the Netflix service, including our websites and user interfaces, worldwide and in perpetuity without further compensation",
+          "originalExplanation": "Gönderdiğiniz içerikler ve geri bildirimler dünya çapında, süresiz ve ek bir ödeme yapılmaksızın kullanılabilir.",
+          "assessment": "REVIEW",
+          "reason": "Geri bildirim lisansı bağlamda mevcut; alıntı “ponses” ile kelimenin ortasından başlamış. 7.3 maddesinden tamamlanmalı.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 6,
+          "category": "unilateral_change",
+          "quote": "We may, from time to time, change these Terms of Use. In case of material changes, we will notify you at least one month before such changes apply to you.",
+          "originalExplanation": "Kullanım şartları tek taraflı olarak değiştirilebilir; esaslı değişikliklerde bir ay önceden bildirilir ve kabul etmiyorsanız hesabınızı feshedebilirsiniz.",
+          "assessment": "SUPPORTED",
+          "reason": "Esaslı koşul değişikliği için bir aylık bildirim alıntıda var.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 7,
+          "category": "liability_limit",
+          "quote": "While we will make reasonable efforts to notify you in advance, to the extent permitted by applicable law, we will not be held liable should such events occur.",
+          "originalExplanation": "Makul kontrolümüz dışındaki olaylar nedeniyle hizmetin kesilmesi durumunda, yasanın izin verdiği ölçüde sorumluluk kabul edilmez.",
+          "assessment": "SUPPORTED",
+          "reason": "Kontrol dışı olaylarda sorumsuzluk ve yasanın izin verdiği ölçü kaydı alıntıda var.",
+          "quoteMatchesSource": true
+        }
+      ],
+      "originalRejectedQuotes": [
+        {
+          "category": "content_license",
+          "reason": "Alıntı kaynakta yok"
+        }
+      ],
+      "scope": "Indirilen ana icerik"
+    },
+    {
+      "id": "adobe",
+      "source": "https://www.adobe.com/cc-shared/fragments/legal/subscription/full-content.plain.html",
+      "sourcePage": "https://www.adobe.com/legal/subscription-terms.html",
+      "sourceSHA256": "eed96261b89439ac0d9cbed7ed74239c9916ff1bba508587ed9c097df1dddf48",
+      "characters": 3373,
+      "analyzedCharacterLimit": 60000,
+      "truncated": false,
+      "model": "gemini-3.5-flash-lite",
+      "originalScore": 65,
+      "originalStatus": "review",
+      "counts": {
+        "SUPPORTED": 2,
+        "FALSE_ALARM": 2,
+        "REVIEW": 1
+      },
+      "findings": [
+        {
+          "findingIndex": 0,
+          "category": "auto_renewal",
+          "quote": "For automatic renewing customers in the United States, after the first year, your subscription will automatically renew on a monthly basis until you cancel.",
+          "originalExplanation": "Amerika Birleşik Devletleri'ndeki otomatik yenilenen müşteriler için aboneliğiniz ilk yıldan sonra siz iptal edene kadar aylık olarak otomatik olarak yenilenir.",
+          "assessment": "SUPPORTED",
+          "reason": "ABD müşterileri ve ilk yıldan sonra aylık yenileme kapsamı doğru korunmuş.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 1,
+          "category": "liability_limit",
+          "quote": "If your primary payment method fails, you authorize us to charge any other payment method in your account.",
+          "originalExplanation": "Birincil ödeme yönteminizin başarısız olması durumunda, hesabınızdaki diğer ödeme yöntemlerini tahsil etmemize izin vermiş olursunuz.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Başka ödeme yönteminden tahsilat izni, sağlayıcının hukuki sorumluluğunu sınırlandıran bir hüküm değil. Taksonomide payment_authorization kategorisi yok.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 2,
+          "category": "cancellation_fee",
+          "quote": "Should you cancel after 14 days, you’ll be charged a lump sum amount of 50% of your remaining contract obligation",
+          "originalExplanation": "14 gün geçtikten sonra iptal ederseniz, kalan sözleşme yükümlülüğünüzün %50'si tutarında toplu bir ücret tahsil edilir.",
+          "assessment": "REVIEW",
+          "reason": "Genel yüzde 50 erken iptal bedeli yakalanmış; aynı planın devamındaki California yüzde 30 istisnası açıklamada yok.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 3,
+          "category": "refund_limit",
+          "quote": "If you cancel within 14 days of your initial order, you’ll be fully refunded.",
+          "originalExplanation": "İlk siparişinizden sonraki 14 gün içinde iptal ederseniz, ücretiniz tam olarak iade edilir; aksi takdirde iade kısıtlamaları geçerli olur.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Seçilen alıntı ilk 14 günde tam iade hakkı veriyor. Bu olumlu hak, tek başına iade kısıtı iddiasını desteklemiyor.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 4,
+          "category": "unilateral_change",
+          "quote": "We may change your plan’s rate each annual renewal term, and we will notify you of any rate change with the option to cancel.",
+          "originalExplanation": "Planınızın ücretini her yıllık yenileme döneminde değiştirebiliriz ve herhangi bir ücret değişikliğini iptal seçeneğiyle birlikte size bildiririz.",
+          "assessment": "SUPPORTED",
+          "reason": "Yıllık yenilemede fiyat değişikliği, bildirim ve iptal seçeneği alıntıda mevcut.",
+          "quoteMatchesSource": true
+        }
+      ],
+      "originalRejectedQuotes": [],
+      "scope": "Adobe: annual / monthly plan bolumunun tamami; diger planlar kapsam disi."
+    },
+    {
+      "id": "reddit",
+      "source": "https://redditinc.com/policies/user-agreement",
+      "sourcePage": "https://redditinc.com/policies/user-agreement",
+      "sourceSHA256": "cd2902e436d1f73e3308203da12a608e6313c8552f8a80d4b4ea92f33c1ac13a",
+      "characters": 84789,
+      "analyzedCharacterLimit": 60000,
+      "truncated": true,
+      "model": "gemini-3.5-flash-lite",
+      "originalScore": 45,
+      "originalStatus": "review",
+      "counts": {
+        "SUPPORTED": 4,
+        "FALSE_ALARM": 1,
+        "REVIEW": 1
+      },
+      "findings": [
+        {
+          "findingIndex": 0,
+          "category": "data_sharing",
+          "quote": "Reddit’s Privacy Policy explains how and why we collect, use, and share information about you when you access or use our Services. You understand that through your use of the Services, you consent to the collection and use of this information as set forth in the Privacy Policy.",
+          "originalExplanation": "Hizmetleri kullanarak Gizlilik Politikası'nda belirtildiği şekilde verilerinizin toplanmasına ve paylaşılmasına onay vermiş olursunuz.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Gizlilik politikasına genel atıf veri paylaşımının alıcılarını, kapsamını veya riskli koşulunu kanıtlamaz. Daha somut lisans/ortak kullanım hükmü aranmalı.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 1,
+          "category": "content_license",
+          "quote": "you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content",
+          "originalExplanation": "Paylaştığınız içerikler üzerinde Reddit'e dünya çapında, telifsiz, kalıcı, geri alınamaz ve alt lisanslanabilir geniş kapsamlı bir kullanım lisansı vermiş olursunuz.",
+          "assessment": "SUPPORTED",
+          "reason": "Geniş içerik lisansının süre, coğrafya, devredilebilirlik ve alt lisans boyutları alıntıda açık.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 2,
+          "category": "unilateral_change",
+          "quote": "We reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without notice to you. Any future release, update, or other addition to functionality of the Services will be subject to these Terms, which may be updated from time to time.",
+          "originalExplanation": "Reddit, bildirimde bulunarak veya bulunmayarak hizmetleri dilediği zaman değiştirme veya sonlandırma hakkını saklı tutar ve bu koşullar zaman zaman güncellenebilir.",
+          "assessment": "SUPPORTED",
+          "reason": "Hizmeti bildirimli/bildirimsiz değiştirme veya durdurma yetkisi destekli.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 3,
+          "category": "liability_limit",
+          "quote": "You agree that we will not be liable to you or to any third party for any modification, suspension, or discontinuation of the Services or any part thereof.",
+          "originalExplanation": "Hizmetlerin değiştirilmesi, askıya alınması veya sonlandırılması durumunda Reddit'in size veya üçüncü taraflara karşı sorumluluk taşımayacağını kabul edersiniz.",
+          "assessment": "SUPPORTED",
+          "reason": "Hizmet değişikliği ve sonlandırmadan doğan sorumsuzluk alıntıda açık.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 4,
+          "category": "liability_limit",
+          "quote": "IN NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM.",
+          "originalExplanation": "Şirketin size karşı olan toplam sorumluluğu belirli bir miktar ile sınırlandırılmıştır; bazı yargı bölgelerinde bu durum değişiklik gösterebilir.",
+          "assessment": "REVIEW",
+          "reason": "Üst sınır yakalanmış; açıklama 100 ABD doları veya önceki altı aylık ödeme karşılaştırmasını söylemiyor. Kullanıcı için anlamlı parasal ayrıntı kayıp.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 5,
+          "category": "unilateral_change",
+          "quote": "We may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above.",
+          "originalExplanation": "Şirket, koşullarda tek taraflı olarak değişiklik yapabileceğini ve güncellenmiş metni yayımlayabileceğini belirtmektedir.",
+          "assessment": "SUPPORTED",
+          "reason": "Koşulları değiştirme ve yeni metni yayımlama yetkisi alıntıda mevcut.",
+          "quoteMatchesSource": true
+        }
+      ],
+      "originalRejectedQuotes": [],
+      "scope": "Indirilen ana icerik"
+    },
+    {
+      "id": "dropbox",
+      "source": "https://www.dropbox.com/terms",
+      "sourcePage": "https://www.dropbox.com/terms",
+      "sourceSHA256": "259a09cdc24c6a08b0d9834285257a639f770d837d16d48d1ef022fa9832521f",
+      "characters": 25302,
+      "analyzedCharacterLimit": 60000,
+      "truncated": false,
+      "model": "gemini-3.5-flash-lite (session context; not recorded in this file)",
+      "originalScore": 55,
+      "originalStatus": "review",
+      "counts": {
+        "SUPPORTED": 4,
+        "FALSE_ALARM": 3,
+        "REVIEW": 1
+      },
+      "findings": [
+        {
+          "findingIndex": 0,
+          "category": "auto_renewal",
+          "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+          "originalExplanation": "Ücretli hesaplara geçildiğinde abonelik otomatik olarak yenilenir ve siz iptal edene kadar her dönem faturalandırılırsınız.",
+          "assessment": "SUPPORTED",
+          "reason": "İptale kadar periyodik otomatik faturalama doğru yakalanmış.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 1,
+          "category": "content_license",
+          "quote": "These Terms don’t give us any rights to Your Stuff except for the limited rights that enable us to offer the Services.",
+          "originalExplanation": "Kullanıcı içeriğiniz size aittir, ancak hizmetleri sunabilmemiz için bize sınırlı haklar ve izinler vermeniz gerekir.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Alıntı hizmet için gereken sınırlı haklar dışında içerik hakkı ALINMADIĞINI söylüyor. Geniş içerik lisansı riski diye sunmak yanıltıcı.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 2,
+          "category": "unilateral_change",
+          "quote": "Dropbox’s Terms of Service will be changing effective January 1, 2027. Click here to review the new terms.",
+          "originalExplanation": "Hizmet şartları ilerleyen bir tarihte tek taraflı olarak değiştirilebilir.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Gelecekteki güncelleme tarihi bildirimi, tek başına kapsamı belirsiz tek taraflı değişiklik yetkisinin kanıtı değil. Gerçek yetki maddeleri diğer bulgularda var.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 3,
+          "category": "unilateral_change",
+          "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions.",
+          "originalExplanation": "Şirket, iş koşulları veya ekonomik değişikliklere dayanarak abonelik yenileme ücretlerinde tek taraflı değişiklik yapabilir.",
+          "assessment": "SUPPORTED",
+          "reason": "Yenilemede ücret değişikliği yetkisi ve gerekçeler alıntıda mevcut; bildirim ve ülke hükümleri ayrıca okunmalı.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 4,
+          "category": "arbitration",
+          "quote": "You can decline this agreement to arbitrate by clicking here and submitting the opt-out form within 30 days of first registering your account or agreeing to these Terms.",
+          "originalExplanation": "Uyuşmazlıkların mahkeme yerine tahkim yoluyla çözülmesi zorunlu kılınmıştır. İlk kayıttan itibaren 30 gün içinde bu kuraldan vazgeçme (opt-out) hakkınızı kullanmazsanız tahkim şartı bağlayıcı olur.",
+          "assessment": "REVIEW",
+          "reason": "Otuz günlük tahkimden çıkış hakkı mevcut; alıntı tahkim yükümlülüğünün kendisi değil, istisna. Esas tahkim maddesi ve ülke istisnaları birlikte sunulmalı.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 5,
+          "category": "arbitration",
+          "quote": "NO CLASS OR REPRESENTATIVE ACTIONS. You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.",
+          "originalExplanation": "Toplu dava (class action) açma hakkından feragat edilmekte olup, uyuşmazlıklar yalnızca bireysel temeldedжли çözülebilir.",
+          "assessment": "SUPPORTED",
+          "reason": "Bireysel uyuşmazlık ve toplu dava sınırlaması açık; ülke bazında uygulanabilirliği konusunda kesin hukuki sonuç çıkarılmaz.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 6,
+          "category": "unilateral_change",
+          "quote": "We may revise these Terms to better reflect: changes to the law, new regulatory requirements, or improvements or enhancements made to our Services.",
+          "originalExplanation": "Şirket, kanun değişiklikleri veya hizmet iyileştirmeleri gibi nedenlerle sözleşme koşullarında tek taraflı değişiklik yapma hakkını saklı tutar.",
+          "assessment": "SUPPORTED",
+          "reason": "Hukuk/düzenleme/hizmet değişiklikleri nedeniyle şartları güncelleme yetkisi açık.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 7,
+          "category": "refund_limit",
+          "quote": "Where applicable, we’ll offer you a prorated refund based on the amounts you have prepaid for Services and your account cancellation date.",
+          "originalExplanation": "Yapılan güncellemeleri kabul etmemeniz durumunda hesap iptal edilebilir ve geçerli olduğu hallerde önceden ödenen tutarlar üzerinden orantılı (prorated) iade yapılır.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Orantılı iade imkanı veren alıntı kullanıcı lehine. Bu alıntıyla genel iade kısıtı iddiası kurulamaz; esas kısıt ayrı maddede.",
+          "quoteMatchesSource": true
+        }
+      ],
+      "originalRejectedQuotes": [
+        {
+          "category": "refund_limit",
+          "reason": "Alıntı kaynakta yok"
+        },
+        {
+          "category": "data_sharing",
+          "reason": "Alıntı kaynakta yok"
+        },
+        {
+          "category": "liability_limit",
+          "reason": "Alıntı kaynakta yok"
+        },
+        {
+          "category": "arbitration",
+          "reason": "Alıntı kaynakta yok"
+        }
+      ],
+      "scope": "İndirilen ana içerik"
+    },
+    {
+      "id": "spotify",
+      "source": "https://www.spotify.com/de/legal/end-user-agreement/",
+      "sourcePage": "https://www.spotify.com/de/legal/end-user-agreement/",
+      "sourceSHA256": "b735971d83f23e538b9a8604671e5f375ee43797c622c9bd44e9fe79438db2ff",
+      "characters": 39163,
+      "analyzedCharacterLimit": 60000,
+      "truncated": false,
+      "model": "gemini-3.5-flash-lite (session context; not recorded in this file)",
+      "originalScore": 45,
+      "originalStatus": "review",
+      "counts": {
+        "SUPPORTED": 2,
+        "FALSE_ALARM": 1,
+        "REVIEW": 5
+      },
+      "findings": [
+        {
+          "findingIndex": 0,
+          "category": "auto_renewal",
+          "quote": "Wenn Sie das kostenpflichtige Abonnement nicht vor Ende des Probeabonnements kündigen, verlieren Sie dieses Vorab-Kündigungsrecht und erteilen Spotify die Erlaubnis, Ihnen bis zur Kündigung des kostenpflichtigen Abonnements monatlich die vereinbarte Gebühr in Rechnung zu stellen.",
+          "originalExplanation": "E deneme süresinin sonunda abonelik otomatik olarak ücretli bir plana dönüşür ve iptal edilene kadar her ay ücret tahsil edilir.",
+          "assessment": "SUPPORTED",
+          "reason": "Denemeden sonra ücretli dönem ve iptale kadar aylık tahsilat yakalanmış. Yazım kusuru var ama temel anlam destekli.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 1,
+          "category": "auto_renewal",
+          "quote": "Sofern Ihr kostenpflichtiges Abonnement nicht für einen vorausbezahlten Zeitraum erworben wurde, läuft das kostenpflichtige Abonnement auf unbestimmte Zeit bis zur Kündigung. Am ersten Tag jedes Abrechnungszeitraums wird Ihnen die Abonnementgebühr in Rechnung gestellt",
+          "originalExplanation": "Abonnements verlängern sich automatisch auf unbestimmte Zeit und die Gebühren werden zu Beginn jedes Abrechnungszeitraums belastet, sofern keine rechtzeitige Kündigung erfolgt.",
+          "assessment": "REVIEW",
+          "reason": "Alıntı destekli ancak açıklama Almanca; sade Türkçe gereksinimi sağlanmıyor.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 2,
+          "category": "unilateral_change",
+          "quote": "Wir können Ihr kostenpflichtiges Abonnement mit einer Frist von mindestens 14 Tagen kündigen.",
+          "originalExplanation": "Der Anbieter behält sich das Recht vor, das kostenpflichtige Abonnement einseitig unter Einhaltung einer Frist von mindestens 14 Tagen zu kündigen.",
+          "assessment": "REVIEW",
+          "reason": "Sağlayıcının en az 14 gün bildirimle fesih yetkisi alıntıda; açıklama Almanca. Bu bulgu koşul değişikliğiyle hizmet feshi arasındaki taksonomi sınırını da gösteriyor.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 3,
+          "category": "content_license",
+          "quote": "Aus diesem Grund räumen Sie Spotify an diesen nutzergenerierten Inhalten, d.h. insbesondere solchen, die durch Rechte an geistigem Eigentum geschützt sind, eine nicht exklusive, übertragbare, gebührenfreie, weltweit gültige Lizenz zur Nutzung, Vervielfältigung, öffentlichen Zugänglichmachung (z. B. zur Aufführung oder Ausstellung), Veröffentlichung, Überse",
+          "originalExplanation": "Nutzer räumen dem Anbieter eine umfangreiche, weltweite und gebührenfreie Lizenz zur Nutzung und Verwertung ihrer hochgeladenen Inhalte ein.",
+          "assessment": "REVIEW",
+          "reason": "Lisans açıkça mevcut fakat alıntı kelimenin ortasında bitiyor ve açıklama Almanca. Tam cümle ve Türkçe açıklama gerekli.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 4,
+          "category": "unilateral_change",
+          "quote": "Aus diesem Grund können wir (dauerhaft oder vorübergehend) die Bereitstellung aller oder eines Teils der Spotify-Dienste (einschließlich bestimmter Funktionen, Merkmale, Abonnement-Pläne und Aktionsangebote) ändern, aussetzen oder einstellen.",
+          "originalExplanation": "Spotify, hizmetleri, abonelik planlarını veya özellikleri triftigen Gründen (geçerli sebeplerle) sürekli veya geçici olarak değiştirme, askıya alma veya durdurma hakkını saklı tutar.",
+          "assessment": "SUPPORTED",
+          "reason": "Geçerli gerekçelerle hizmet değişikliği/durdurma destekli. Açıklamadaki Almanca ara ifade sade Türkçeye çevrilmeli.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 5,
+          "category": "liability_limit",
+          "quote": "Eine Haftung von Spotify für Schäden, die durch technische Störungen der Community, Verzögerungen oder Unterbrechungen in der Übermittlung, und/oder durch Verlust oder Löschung von Inhalten, z.B. aufgrund von Cyberangriffen oder Schadprogrammen (wie etwa Viren etc) verursacht werden, ist ausgeschlossen.",
+          "originalExplanation": "Spotify excludes liability for damages caused by technical malfunctions, transmission delays or interruptions, and loss or deletion of content due to cyberattacks or malware.",
+          "assessment": "REVIEW",
+          "reason": "Topluluk hizmetindeki teknik olaylara ilişkin sorumsuzluk destekli; açıklama İngilizce ve daha geniş istisnalar ayrıca kontrol edilmeli.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 6,
+          "category": "liability_limit",
+          "quote": "Über die vorgenannten Fälle hinaus ist eine Haftung von Spotify ausgeschlossen. In diesen Fällen steht Ihnen bei Problemen oder Unzufriedenheit mit den Spotify-Diensten als einzige und ausschließliche Abhilfe die De-Installation der Spotify-Software und die Beendigung der Nutzung der Spotify-Dienste zur Verfügung.",
+          "originalExplanation": "Beyond specific permitted cases, Spotify's liability is excluded, leaving the user with uninstalling the software and terminating service as the sole remedy.",
+          "assessment": "REVIEW",
+          "reason": "Önceki istisnalar dışındaki sorumsuzluk alıntıda; açıklama İngilizce. Hukuki uygulanabilirlik ayrı konu.",
+          "quoteMatchesSource": true
+        },
+        {
+          "findingIndex": 7,
+          "category": "liability_limit",
+          "quote": "Die vorstehende Schadloshaltungsklausel gilt nicht, wenn Sie den Verstoß bzw. die Verletzung nicht zu vertreten haben.",
+          "originalExplanation": "Sorumluluk sınırları ve tazminat yükümlülüğü getirilmiştir; ancak ihlalden sorumlu olmadığınız durumlarda bu kuralın uygulanmayacağı belirtilmektedir.",
+          "assessment": "FALSE_ALARM",
+          "reason": "Kullanıcının ihlalden sorumlu olmadığı durumda tazminat kuralının uygulanmaması bir istisna/koruma. Tek başına sağlayıcının sorumluluk sınırı riski değil.",
+          "quoteMatchesSource": true
+        }
+      ],
+      "originalRejectedQuotes": [
+        {
+          "category": "unilateral_change",
+          "reason": "Alıntı kaynakta yok"
+        },
+        {
+          "category": "content_license",
+          "reason": "Alıntı kaynakta yok"
+        }
+      ],
+      "scope": "İndirilen ana içerik"
+    }
+  ],
+  "selectedMissedClausesAndDetails": [
+    {
+      "source": "dropbox",
+      "kind": "missed-risk-clause",
+      "category": "refund_limit",
+      "quote": "Refunds are only issued if required by law.",
+      "note": "Asıl iade kısıtı doğrulanmış raporda yok; yerine kullanıcı lehine orantılı iade riski işaretlenmiş. Aynı paragraftaki AB 14 günlük istisnası birlikte açıklanmalı."
+    },
+    {
+      "source": "dropbox",
+      "kind": "missed-risk-clause",
+      "category": "liability_limit",
+      "quote": "WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100%",
+      "note": "Sağlayıcının genel parasal sorumluluk sınırı rapora girmemiş. Yasa gereği sınırlandırılamayan sorumluluk ve AB/UK tüketici istisnaları korunmalı; tutar ülke bağımsız kesin sonuç değildir."
+    },
+    {
+      "source": "reddit",
+      "kind": "missed-material-detail",
+      "category": "content_license",
+      "quote": "this license includes the right to use Your Content to train AI and machine learning models",
+      "note": "Geniş lisans yakalanmış fakat yapay zekâ eğitiminde kullanım gibi belirgin sonuç ayrıca açıklanmamış. Bu madde ilk 60.000 karakterin içinde: yalnızca kesilme ile açıklanamaz."
+    },
+    {
+      "source": "spotify",
+      "kind": "missed-risk-clause",
+      "category": "unilateral_change",
+      "quote": "Die Änderungen gelten als akzeptiert, wenn Sie diese nicht innerhalb von 30 Tagen ablehnen.",
+      "note": "Otuz gün içinde itiraz edilmezse değişikliğin kabul edilmiş sayılması raporda yok. Geçerli gerekçeler, bildirim ve önemli sözleşme dengesini değiştirmeme sınırı birlikte anlatılmalı."
+    }
+  ],
+  "fullRecall": null,
+  "fullRecallReason": "Exhaustive independently annotated gold set is not available. Reddit is truncated. Selected misses are not an exhaustive FN count."
+}

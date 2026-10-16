@@ -1,0 +1,122 @@
+{
+  "id": "reddit",
+  "source": "https://redditinc.com/policies/user-agreement",
+  "sourcePage": "https://redditinc.com/policies/user-agreement",
+  "scope": "Indirilen ana icerik",
+  "model": "gemini-3.5-flash-lite",
+  "fetched_at": "2026-10-15T23:41:18.599Z",
+  "sha256": "cd2902e436d1f73e3308203da12a608e6313c8552f8a80d4b4ea92f33c1ac13a",
+  "characters": 84789,
+  "result": {
+    "version": 1,
+    "score": 45,
+    "status": "review",
+    "risks": [
+      {
+        "category": "data_sharing",
+        "quote": "Reddit’s Privacy Policy explains how and why we collect, use, and share information about you when you access or use our Services. You understand that through your use of the Services, you consent to the collection and use of this information as set forth in the Privacy Policy.",
+        "explanation": "Hizmetleri kullanarak Gizlilik Politikası'nda belirtildiği şekilde verilerinizin toplanmasına ve paylaşılmasına onay vermiş olursunuz.",
+        "confidence": 0.9,
+        "start": 40634,
+        "end": 40912
+      },
+      {
+        "category": "content_license",
+        "quote": "you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content",
+        "explanation": "Paylaştığınız içerikler üzerinde Reddit'e dünya çapında, telifsiz, kalıcı, geri alınamaz ve alt lisanslanabilir geniş kapsamlı bir kullanım lisansı vermiş olursunuz.",
+        "confidence": 0.95,
+        "start": 44905,
+        "end": 45134
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "We reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without notice to you. Any future release, update, or other addition to functionality of the Services will be subject to these Terms, which may be updated from time to time.",
+        "explanation": "Reddit, bildirimde bulunarak veya bulunmayarak hizmetleri dilediği zaman değiştirme veya sonlandırma hakkını saklı tutar ve bu koşullar zaman zaman güncellenebilir.",
+        "confidence": 0.9,
+        "start": 42099,
+        "end": 42384
+      },
+      {
+        "category": "liability_limit",
+        "quote": "You agree that we will not be liable to you or to any third party for any modification, suspension, or discontinuation of the Services or any part thereof.",
+        "explanation": "Hizmetlerin değiştirilmesi, askıya alınması veya sonlandırılması durumunda Reddit'in size veya üçüncü taraflara karşı sorumluluk taşımayacağını kabul edersiniz.",
+        "confidence": 0.95,
+        "start": 42385,
+        "end": 42540
+      },
+      {
+        "category": "liability_limit",
+        "quote": "IN NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM.",
+        "explanation": "Şirketin size karşı olan toplam sorumluluğu belirli bir miktar ile sınırlandırılmıştır; bazı yargı bölgelerinde bu durum değişiklik gösterebilir.",
+        "confidence": 0.95,
+        "start": 56839,
+        "end": 57056
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "We may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above.",
+        "explanation": "Şirket, koşullarda tek taraflı olarak değişiklik yapabileceğini ve güncellenmiş metni yayımlayabileceğini belirtmektedir.",
+        "confidence": 0.95,
+        "start": 58716,
+        "end": 58857
+      }
+    ],
+    "rejected": [],
+    "uncertainties": [
+      "The provided document only contains a list of document titles, headings, and dates in various languages, lacking actual contractual clause text to evaluate specific risks.",
+      "Metin sadece başlıklar ve tarihler içermekte olup, sözleşmenin detaylı koşullarını (oto yenileme, iptal, sorumluluk sınırları vb.) barındırmamaktadır.",
+      "İncelenen metin parçasında risk kategorileriyle eşleşebilecek yeterli uzunlukta ve bağlamda cümle veya alıntı bulunmamaktadır.",
+      "Belge metni yalnızca politika ve sözleşme başlıklarından oluşmakta olup, detaylı hüküm, koşul ve madde içermemektedir.",
+      "Otomatik yenileme, iptal ücreti, iade kısıtı, veri paylaşımı, içerik lisansı, tek taraflı değişiklik, tahkim ve sorumluluk sınırına dair metin bağlamı eksiktir.",
+      "Metin yalnızca politika başlıklarını ve genel bilgilendirme kısımlarını içermekte olup, otomatik yenileme, iptal ücreti, iade kısıtı, veri paylaşımı, içerik lisansı, tek taraflı değişiklik, tahkim ve sorumluluk sınırına dair detaylı koşulları barındırmamaktadır.",
+      "Belgenin devamı eksik olduğu için ilgili sözleşme maddelerine ulaşılamamıştır.",
+      "Metin eksik kalmış ve son kısımda kesilmiştir; tahkim, iade, iptal ücretleri veya otomatik yenileme ile ilgili maddeler sağlanan belgede yer almamaktadır.",
+      "Otomatik yenileme, iptal ücreti, iade kısıtı, veri paylaşımı, içerik lisansı, tek taraflı değişiklik ve tahkim maddelerine ilişkin detaylar bu metinde yer almamaktadır.",
+      "Belge eksik veya kesiktir; bu nedenle otomatik yenileme, iptal ücreti, iade kısıtı, veri paylaşımı, içerik lisansı, tahkim ve sorumluluk sınırı gibi diğer kategorilere ait hükümler metinde yer almamaktadır.",
+      "Metin sınırı aşıldı; belgenin tamamı incelenmedi."
+    ],
+    "chunks": 7,
+    "truncated": true,
+    "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+  },
+  "review": [
+    {
+      "category": "data_sharing",
+      "quote": "Reddit’s Privacy Policy explains how and why we collect, use, and share information about you when you access or use our Services. You understand that through your use of the Services, you consent to the collection and use of this information as set forth in the Privacy Policy.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "content_license",
+      "quote": "you grant us a worldwide, royalty-free, perpetual, irrevocable, non-exclusive, transferable, and sublicensable license to use, copy, modify, adapt, prepare derivative works of, distribute, store, perform, and display Your Content",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "We reserve the right to modify, suspend, or discontinue the Services (in whole or in part) at any time, with or without notice to you. Any future release, update, or other addition to functionality of the Services will be subject to these Terms, which may be updated from time to time.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "You agree that we will not be liable to you or to any third party for any modification, suspension, or discontinuation of the Services or any part thereof.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "IN NO EVENT WILL THE AGGREGATE LIABILITY OF THE REDDIT ENTITIES EXCEED THE GREATER OF ONE HUNDRED U.S. DOLLARS ($100) OR ANY AMOUNT YOU PAID REDDIT IN THE PREVIOUS SIX MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "We may make changes to these Terms from time to time. If we make changes, we will post the revised Terms and update the Effective Date above.",
+      "label": "UNREVIEWED",
+      "note": ""
+    }
+  ],
+  "missed": [],
+  "annotationStatus": "UNREVIEWED: tam metin gold etiketleme olmadan precision/recall hesaplanmaz."
+}

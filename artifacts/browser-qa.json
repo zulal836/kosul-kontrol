@@ -1,0 +1,12 @@
+{
+  "runner": "Playwright Chromium (Cypress is unavailable)",
+  "checks": [
+    "UI happy 35/100",
+    "UI uncertainty no score",
+    "real page-agent DOM extraction",
+    "hidden injection excluded",
+    "visible injection retained as data"
+  ],
+  "passed": true,
+  "cypressRun": false
+}

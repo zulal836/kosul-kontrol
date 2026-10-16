@@ -1,0 +1,148 @@
+{
+  "id": "netflix",
+  "source": "https://help.netflix.com/en/legal/termsofuse",
+  "sourcePage": "https://help.netflix.com/en/legal/termsofuse",
+  "scope": "Indirilen ana icerik",
+  "model": "gemini-3.5-flash-lite",
+  "fetched_at": "2026-10-15T23:41:03.851Z",
+  "sha256": "79844d34a9cad023475d71e2439c1d1579b87ffac316550ee3c89318f5660793",
+  "characters": 22098,
+  "result": {
+    "version": 1,
+    "score": 70,
+    "status": "review",
+    "risks": [
+      {
+        "category": "auto_renewal",
+        "quote": "Unless you cancel your subscription before your billing date, you authorize us to charge the subscription fee for the next billing cycle to your Payment Method",
+        "explanation": "Aboneliğinizi iptal etmediğiniz sürece sonraki fatura dönemi için ücret otomatik olarak ödeme yönteminize yansıtılır.",
+        "confidence": 1,
+        "start": 10245,
+        "end": 10404
+      },
+      {
+        "category": "refund_limit",
+        "quote": "To the extent permitted by the applicable law, payments are non-refundable and we do not provide refunds or credits for any partial subscription periods or unused Netflix content.",
+        "explanation": "İlgili yasaların izin verdiği ölçüde, kısmi dönemler veya kullanılmayan içerikler için ödemeler iade edilmez ve kredi verilmez.",
+        "confidence": 1,
+        "start": 14072,
+        "end": 14251
+      },
+      {
+        "category": "liability_limit",
+        "quote": "The Netflix service is provided \"as is\" and without warranty or condition. In particular, our service may not be uninterrupted or error-free. You waive all special, indirect and consequential damages against us.",
+        "explanation": "Hizmet olduğu gibi sunulur, kesintisiz veya hatasız olacağı garanti edilmez ve dolaylı zararlar için sorumluluk reddedilir.",
+        "confidence": 1,
+        "start": 17575,
+        "end": 17786
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "We may change our subscription plans and the price of our service from time to time. We will notify you at least one month before any price changes or changes to your subscription plan will become effective.",
+        "explanation": "Abonelik planları ve fiyatlar tek taraflı olarak değiştirilebilir; değişiklikler önceden bildirilir ancak kabul edilmezse tek yol iptal etmektir.",
+        "confidence": 1,
+        "start": 14714,
+        "end": 14921
+      },
+      {
+        "category": "data_sharing",
+        "quote": "We may also update your Payment Methods using information provided by the payment service providers.",
+        "explanation": "Ödeme hizmeti sağlayıcılarından alınan bilgiler kullanılarak ödeme yöntemleri güncellenebilir.",
+        "confidence": 0.9,
+        "start": 12401,
+        "end": 12501
+      },
+      {
+        "category": "content_license",
+        "quote": "ponses to questionnaires or through postings to the Netflix service, including our websites and user interfaces, worldwide and in perpetuity without further compensation",
+        "explanation": "Gönderdiğiniz içerikler ve geri bildirimler dünya çapında, süresiz ve ek bir ödeme yapılmaksızın kullanılabilir.",
+        "confidence": 0.95,
+        "start": 19200,
+        "end": 19369
+      },
+      {
+        "category": "unilateral_change",
+        "quote": "We may, from time to time, change these Terms of Use. In case of material changes, we will notify you at least one month before such changes apply to you.",
+        "explanation": "Kullanım şartları tek taraflı olarak değiştirilebilir; esaslı değişikliklerde bir ay önceden bildirilir ve kabul etmiyorsanız hesabınızı feshedebilirsiniz.",
+        "confidence": 0.95,
+        "start": 20636,
+        "end": 20790
+      },
+      {
+        "category": "liability_limit",
+        "quote": "While we will make reasonable efforts to notify you in advance, to the extent permitted by applicable law, we will not be held liable should such events occur.",
+        "explanation": "Makul kontrolümüz dışındaki olaylar nedeniyle hizmetin kesilmesi durumunda, yasanın izin verdiği ölçüde sorumluluk kabul edilmez.",
+        "confidence": 0.9,
+        "start": 21500,
+        "end": 21659
+      }
+    ],
+    "rejected": [
+      {
+        "category": "content_license",
+        "reason": "Alıntı kaynakta yok"
+      }
+    ],
+    "uncertainties": [
+      "Belge metni eksik ve kesiktir, bu nedenle abonelik iptali, ücret iadesi, otomatik yenileme, tahkim ve sorumluluk sınırı gibi kritik konuların devamı yer almamaktadır.",
+      "Ülkelere göre zorunlu tüketici yasalarının iade ve iptal haklarını nasıl değiştirdiği metinde sınırlı belirtilmiştir.",
+      "Kaynakta bulunamayan alıntılar reddedildi.",
+      "Belge metninde otomatik yenileme, iptal ücreti, iade kısıtları, veri paylaşımı ve tahkim ile ilgili hükümler yer almamaktadır veya bu alıntılanan metinde geçmemektedir."
+    ],
+    "chunks": 3,
+    "truncated": false,
+    "disclaimer": "Hukuki tavsiye değildir. Bilgilendirme amaçlıdır; önemli kararlar için bir hukuk uzmanına danışın."
+  },
+  "review": [
+    {
+      "category": "auto_renewal",
+      "quote": "Unless you cancel your subscription before your billing date, you authorize us to charge the subscription fee for the next billing cycle to your Payment Method",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "refund_limit",
+      "quote": "To the extent permitted by the applicable law, payments are non-refundable and we do not provide refunds or credits for any partial subscription periods or unused Netflix content.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "The Netflix service is provided \"as is\" and without warranty or condition. In particular, our service may not be uninterrupted or error-free. You waive all special, indirect and consequential damages against us.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "We may change our subscription plans and the price of our service from time to time. We will notify you at least one month before any price changes or changes to your subscription plan will become effective.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "data_sharing",
+      "quote": "We may also update your Payment Methods using information provided by the payment service providers.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "content_license",
+      "quote": "ponses to questionnaires or through postings to the Netflix service, including our websites and user interfaces, worldwide and in perpetuity without further compensation",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "unilateral_change",
+      "quote": "We may, from time to time, change these Terms of Use. In case of material changes, we will notify you at least one month before such changes apply to you.",
+      "label": "UNREVIEWED",
+      "note": ""
+    },
+    {
+      "category": "liability_limit",
+      "quote": "While we will make reasonable efforts to notify you in advance, to the extent permitted by applicable law, we will not be held liable should such events occur.",
+      "label": "UNREVIEWED",
+      "note": ""
+    }
+  ],
+  "missed": [],
+  "annotationStatus": "UNREVIEWED: tam metin gold etiketleme olmadan precision/recall hesaplanmaz."
+}

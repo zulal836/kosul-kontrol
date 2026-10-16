@@ -1,0 +1,37 @@
+[
+  {
+    "id": "netflix",
+    "status": "model-run-complete-needs-human-annotation",
+    "characters": 22098,
+    "truncated": false,
+    "assessment": "AI-assisted evidence review; independent human review pending"
+  },
+  {
+    "id": "adobe",
+    "status": "model-run-complete-needs-human-annotation",
+    "characters": 3373,
+    "truncated": false,
+    "assessment": "AI-assisted evidence review; independent human review pending"
+  },
+  {
+    "id": "reddit",
+    "status": "model-run-complete-needs-human-annotation",
+    "characters": 84789,
+    "truncated": true,
+    "assessment": "AI-assisted evidence review; independent human review pending"
+  },
+  {
+    "id": "dropbox",
+    "status": "model-run-complete-needs-human-annotation",
+    "characters": 25302,
+    "truncated": false,
+    "assessment": "AI-assisted evidence review; independent human review pending"
+  },
+  {
+    "id": "spotify",
+    "status": "model-run-complete-needs-human-annotation",
+    "characters": 39163,
+    "truncated": false,
+    "assessment": "AI-assisted evidence review; independent human review pending"
+  }
+]
